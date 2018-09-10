@@ -1,0 +1,7 @@
+set title "sorting"
+set xlabel "size"
+set ylabel "time(microseconds)"
+set grid
+set autoscale
+set output "quickSortImage.png"
+plot "quicksort.dat" t 'Merge Sort'  with lines

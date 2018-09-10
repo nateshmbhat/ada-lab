@@ -1,0 +1,7 @@
+set xlabel "size"
+set ylabel "time"
+set title "Sorting"
+set grid
+set autoscale
+set output "MergePlot.png"
+plot "mergesort.dat" t 'Merge sort' with lines
