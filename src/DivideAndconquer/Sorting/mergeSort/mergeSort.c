@@ -79,6 +79,8 @@ int main(void)
 	double s, e ; 
 	FILE * fp ; 
 	fp = fopen("mergort.dat" , "w") ; 
+	userInteract(a , n) ; 
+	exit(10) ; 
 
 for(i=100 ; i<size ; i+=100)
 {

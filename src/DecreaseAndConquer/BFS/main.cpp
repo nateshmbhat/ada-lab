@@ -3,53 +3,24 @@
 
 using namespace std ;
 
-class Queue
-{
-	public : 
-	int *Q , f , r ; 
-	Queue(int n ){
-	Q = new int[n] ;
-		f = r = -1 ;
-	}
-	
-	void enqueue(int a)
-	{
-		if(f==-1) f = 0 ;
-		Q[r++] = a ;
-	}
-	
-	bool isEmpty(){
-		return r-f <= 0 ;
-	}
-	
-	int front(){return Q[f] ;}
-	
-	int dequeue()
-	{
-		 
-		int data =  Q[f++] ;
-		if(f==r) f= r = -1 ;
-		return data ;  
-	}
-};
-
-
 void BFS(int v , int ** adj , bool *visited , int n)
 {
+	int front ; 
+	queue<int> Q = queue<int>() ; 
+	Q.push(v) ; 
 
-	visited[v] = 1 ;
-	Queue obj = Queue(n) ;
-	
-	obj.enqueue(v) ;
-	
-	while(!obj.isEmpty())
-	{
-		visited[obj.front()] = 1 ;
-		for(int i =0 ; i < n ;i++)
-			if( adj[v][i] == 1 && !visited[i] )
-				obj.enqueue(i) ;
-			cout<< obj.dequeue() << " " ;
-	}	
+	while(!Q.empty()){
+		front =  Q.front()  ;Q.pop() ; 
+		cout<<front+1<<" " ; 
+		visited[front] = 1 ; 
+		for(int i =0 ;i  < n ; i++){
+			if(adj[front][i] && !visited[i])
+			{
+				Q.push(i) ; 
+			}
+		}
+	}
+	cout<<endl<<endl;  
 }
 
 

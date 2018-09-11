@@ -1,24 +1,44 @@
-Script started on Tuesday 04 September 2018 11:18:29 AM IST
-]0;user2018@dell-3669: ~/Documents/NIKHIL_P_RAO/DFSuser2018@dell-3669:~/Documents/NIKHIL_P_RAO/DFS$ ./a.out 
-Enter the number of vertices : 4 5
-Enter adjancency matrix : 
+
+natesh@falcon:~/Desktop/ada-lab-sit/src/DecreaseAndConquer/DFS$ ./a.out
+Enter the number of vertices : 5
+Enter adjancency matrix :
 0 0 1 0 0
-0 0   1 0 0
-0 0 1 1     0 1 1
+0 0 1 0 0
+0 0 0 1 1
 0 0 0 0 0
-0 0 0 00    0
-Enter source vertex : 1 1 1
+0 0 0 0 0
+Enter source vertex : 1
 
-Vertex 1 reachable 
+Vertex 1 reachable
 
-Vertex 2 not reachable 
+Vertex 2 not reachable
 
-Vertex 3 reachable 
+Vertex 3 reachable
 
-Vertex 4 reachable 
+Vertex 4 reachable
 
-Vertex 5 reachable 
-]0;user2018@dell-3669: ~/Documents/NIKHIL_P_RAO/DFSuser2018@dell-3669:~/Documents/NIKHIL_P_RAO/DFS$ exit
-exit
+Vertex 5 reachable
 
-Script done on Tuesday 04 September 2018 11:19:16 AM IST
+
+-------------------------------------------------------------------------------
+
+
+natesh@falcon:~/Desktop/ada-lab-sit/src/DecreaseAndConquer/DFS$ ./a.out
+Enter the number of vertices : 5
+Enter adjancency matrix :
+0 1 1 1 0
+0 0 0 0 0
+0 0 0 0 0
+0 0 0 0 0
+0 0 0 1 0
+Enter source vertex : 1
+
+Vertex 1 reachable
+
+Vertex 2 reachable
+
+Vertex 3 reachable
+
+Vertex 4 reachable
+
+Vertex 5 not reachable
