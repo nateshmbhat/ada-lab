@@ -1,0 +1,26 @@
+natesh@falcon:~/Desktop/ada-lab-sit/src/DivideAndconquer/linearSearch$ ./a.out 
+Array is : 
+82 64 53 72 82 68 77 45 68 0 28 17 31 16 61 34 29 72 1 78 
+
+
+Key = 30
+
+Element not found !
+natesh@falcon:~/Desktop/ada-lab-sit/src/DivideAndconquer/linearSearch$ ./a.out 
+Array is : 
+0 54 9 10 74 59 19 76 81 83 15 92 47 88 98 59 41 73 42 89 
+
+
+Key = 30
+
+Element not found !
+natesh@falcon:~/Desktop/ada-lab-sit/src/DivideAndconquer/linearSearch$ ./a.out 
+Array is : 
+18 82 80 32 1 30 58 78 66 78 62 83 18 11 12 38 35 37 79 83 
+
+
+Key = 30
+
+Element found at position : 5 
+
+

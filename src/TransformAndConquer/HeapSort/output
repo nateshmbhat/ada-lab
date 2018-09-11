@@ -1,0 +1,23 @@
+natesh@falcon:~/Desktop/ada-lab-sit/src/TransformAndConquer/HeapSort$ ./a.out 
+
+1. Plot graph   2.heapSort      3.Exit
+Enter choice : 2
+
+Enter size of random array : 10
+Array is : 
+45 41 53 93 69 35 38 23 83 60 
+
+13 23 35 38 41 45 53 60 69 83 
+
+natesh@falcon:~/Desktop/ada-lab-sit/src/TransformAndConquer/HeapSort$ ./a.out 
+
+1. Plot graph   2.heapSort      3.Exit
+Enter choice : 2
+
+Enter size of random array : 20
+Array is : 
+32 36 61 62 17 8 52 65 99 95 87 17 47 32 10 28 88 24 35 5 
+
+5 8 10 17 17 24 24 28 32 32 35 36 47 52 61 62 65 87 88 95 
+
+

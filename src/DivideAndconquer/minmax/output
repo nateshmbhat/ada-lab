@@ -1,0 +1,17 @@
+natesh@falcon:~/Desktop/ada-lab-sit/src/DivideAndconquer/minmax$ ./a.out 
+Array is : 
+1 4 4 13 22 28 32 40 45 51 53 55 59 67 71 78 82 86 88 96 
+
+Minimum = 1  , and maximum = 96
+natesh@falcon:~/Desktop/ada-lab-sit/src/DivideAndconquer/minmax$ ./a.out 
+Array is : 
+12 16 20 20 27 30 32 33 33 41 41 49 58 64 72 73 82 87 92 94 
+
+Minimum = 12  , and maximum = 94
+natesh@falcon:~/Desktop/ada-lab-sit/src/DivideAndconquer/minmax$ ./a.out 
+Array is : 
+12 16 20 20 27 30 32 33 33 41 41 49 58 64 72 73 82 87 92 94 
+
+Minimum = 12  , and maximum = 94
+
+

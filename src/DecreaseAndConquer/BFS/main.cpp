@@ -8,7 +8,6 @@ void BFS(int v , int ** adj , bool *visited , int n)
 	int front ; 
 	queue<int> Q = queue<int>() ; 
 	Q.push(v) ; 
-
 	while(!Q.empty()){
 		front =  Q.front()  ;Q.pop() ; 
 		cout<<front+1<<" " ; 

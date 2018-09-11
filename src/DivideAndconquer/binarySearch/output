@@ -1,0 +1,26 @@
+natesh@falcon:~/Desktop/ada-lab-sit/src/DivideAndconquer/binarySearch$ ./binarySearch 
+Array is : 
+13 21 29 37 38 43 50 55 55 56 57 60 61 68 74 77 78 85 88 
+
+
+Key = 30
+
+Element not found !
+natesh@falcon:~/Desktop/ada-lab-sit/src/DivideAndconquer/binarySearch$ ./binarySearch 
+Array is : 
+15 19 19 24 31 33 42 48 51 51 56 56 57 61 69 78 85 91 97 
+
+
+Key = 30
+
+Element not found !
+natesh@falcon:~/Desktop/ada-lab-sit/src/DivideAndconquer/binarySearch$ ./binarySearch 
+Array is : 
+18 24 30 38 38 45 47 49 51 59 68 71 77 80 83 91 96 99 104 
+
+
+Key = 30
+
+Element found at position : 3 
+
+
