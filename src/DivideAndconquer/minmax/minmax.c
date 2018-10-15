@@ -9,19 +9,15 @@ typedef struct node{
 node minmax(int a[] , int low , int high)
 {
   if(low==high){
-       node mynode ; 
-       mynode.min = mynode.max = a[low] ; 
+       node mynode = {a[low] , a[low]}  ;
        return mynode ;
   }
    
    int mid  = (high+low)/2 ;
    node left = minmax( a, low , mid) ;
    node right = minmax(a , mid+1 , high) ;
-   
-   node temp ;
-   temp.min = left.min<right.min  ? left.min : right.min ; 
-   temp.max = left.max>right.max ? left.max : right.max ; 
-   return temp ;
+   node res = {left.min<right.min?left.min : right.min , left.max>right.max ? left.max : right.max} ;  
+   return res ; 
 }
 
 
