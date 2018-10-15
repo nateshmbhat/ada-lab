@@ -1,0 +1,41 @@
+1.Insert
+2.Display
+3.Quit
+Enter your choice : 1
+Enter the value to be inserted : 4
+1.Insert
+2.Display
+3.Quit
+Enter your choice : 1
+Enter the value to be inserted : 5
+1.Insert
+2.Display
+3.Quit
+Enter your choice : 1
+Enter the value to be inserted : 6
+
+L Rotation performed during Insertion
+
+1.Insert
+2.Display
+3.Quit
+Enter your choice : 2
+Tree is :
+Inorder Traversal is: 4(0) 5(0) 6(0)
+
+1.Insert
+2.Display
+3.Quit
+Enter your choice : 1
+Enter the value to be inserted : 3
+1.Insert
+2.Display
+3.Quit
+Enter your choice : 2
+Tree is :
+Inorder Traversal is: 3(0) 4(1) 5(1) 6(0)
+
+1.Insert
+2.Display
+3.Quit
+Enter your choice : 3
