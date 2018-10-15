@@ -1,0 +1,17 @@
+Enter n : 4
+Enter value and weight : 1 2
+Enter value and weight : 2 3
+Enter value and weight : 5 4
+Enter value and weight : 6 5
+Enter capacity : 8 
+Item 4 included. Item 3 included. res = 8
+
+
+
+Enter n : 4
+Enter value and weight : 10 5
+Enter value and weight : 40 4
+Enter value and weight : 30 6
+Enter value and weight : 50 3
+Enter capacity : 10
+Item 4 included. Item 2 included. res = 90

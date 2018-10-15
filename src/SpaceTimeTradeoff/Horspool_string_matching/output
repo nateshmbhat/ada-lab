@@ -1,0 +1,22 @@
+
+Enter Text : Hello this is my program
+Enter Pattern : this is
+found at position : 6
+
+
+------------------------------------------
+
+
+Enter Text : this is executing the program
+Enter Pattern : code
+Not found !
+
+
+
+------------------------------------------
+
+
+
+Enter Text : There is an error in the code
+Enter Pattern : n error
+found at position : 10
