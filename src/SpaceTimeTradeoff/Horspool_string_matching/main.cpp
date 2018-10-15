@@ -23,10 +23,14 @@ int horspool(string T , string P , int table[]){
 
 int main(void){
 	string T , P ;
+	cout<<"Enter Text : " ; 
 	getline(cin , T) ; 
+	cout<<"Enter Pattern : " ; 
 	getline(cin , P) ;  
 	int table[128] ;
 	shiftTable(table , P) ; 
 	int res = horspool(T , P , table) ;
-	cout<< " res = " << res <<endl; 
+	if(res>=0)
+		cout<< "found at position : " << res <<endl; 
+	else cout<< "Not found !" <<endl; 
 }
