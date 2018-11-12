@@ -1,26 +1,12 @@
-Enter number of vertices : 5
-Enter adj matrix : 
-0 0 1 0 0
-0 0 1 0 0
-0 0 0 1 1 
-0 0 0 0 1
-0 0 0 0 0
-
-Topological sorting is : 
- 5 4 3 1 2
-
-
--------------------------------------
-
-
-
-Enter number of vertices : 4
-Enter adj matrix : 
-0 1 0 0 
-0 0 1 0
-0 0 0 1
+Script started on Tuesday 04 September 2018 11:25:14 AM IST
+]0;user2018@dell-3669: ~/Documents/NIKHIL_P_RAO/topological_sortinguser2018@dell-3669:~/Documents/NIKHIL_P_RAO/topological_sorting$ ls[K[K./a.out 
+Enter the number of vertices : 4
+Enter adjancency matrix :  0 0 0      
+0 0 0 0 1
+0   1 0 1 0
+ 0  0 0 0 1
 0 0 0 0
+Topological Sorting is : 2 3 1 4 ]0;user2018@dell-3669: ~/Documents/NIKHIL_P_RAO/topological_sortinguser2018@dell-3669:~/Documents/NIKHIL_P_RAO/topological_sorting$ exit
+exit
 
-Topological sorting is : 
- 4 3 2 1
-
+Script done on Tuesday 04 September 2018 11:25:35 AM IST

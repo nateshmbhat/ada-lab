@@ -10,7 +10,7 @@ typedef struct{
 void getItems(Item items[] , int n , int mem[][100] , int cap){
 	int i = n , j = cap ; 
 	while(i>=1 && j>=1){
-		if(mem[i][j]!=mem[i-1][j-1]){
+		if(mem[i][j]!=mem[i-1][j]){
 			cout<<" Item " << i << " included." <<endl; 
 			i-=1 ; j-=items[i].weight ; 
 		}

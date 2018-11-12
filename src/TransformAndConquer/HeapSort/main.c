@@ -20,8 +20,6 @@ void heapSort(int a[] , int n )
 {
 	constructHeap(a , n ) ;
 
-	int i =0 ;
-
 	int heapsize = n ;
 
 	while(heapsize>0){

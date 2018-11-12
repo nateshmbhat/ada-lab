@@ -52,7 +52,6 @@ void primMST(int graph[100][100])
                 parent[v] = u, key[v] = graph[u][v]; 
     } 
   
-    
     printMST(parent, V, graph); 
 } 
 
