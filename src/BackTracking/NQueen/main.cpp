@@ -14,7 +14,7 @@ bool isSafe(int board[MAX][MAX] , int n , int posrow , int poscol){
 	for(int i=posrow , j=poscol ; i>=0&&j<n ; i-- , j++){	
 		if(board[i][j])return 0 ; 
 	}
-	return 1 ; 
+	return true ; 
 }
 
 
@@ -25,14 +25,12 @@ bool NQueen(int board[MAX][MAX] , int row ,  int n){
 		if(isSafe(board , n , row , i ))
 		{
 			board[row][i] = 1 ; 
-			if(!NQueen(board , row +1 , n ))
-			{
-				board[row][i] = 0 ; 
-			}
-			else return 1 ; 
+			if(NQueen(board , row +1 , n )) 
+				return true ; 
+			board[row][i] = 0 ; 
 		}
 	}
-	return  0; 
+	return  false; 
 }
 
 
