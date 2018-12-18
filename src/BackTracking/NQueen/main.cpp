@@ -19,7 +19,7 @@ bool isSafe(int board[MAX][MAX] , int n , int posrow , int poscol){
 
 
 bool NQueen(int board[MAX][MAX] , int row ,  int n){
-	if(row>=n)return 1 ;
+	if(row>=n)return true ;
 
 	for(int i =0 ;i < n ; i++){
 		if(isSafe(board , n , row , i ))
