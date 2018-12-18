@@ -16,10 +16,21 @@ bool isSafe(int board[MAX][MAX] , int n , int posrow , int poscol){
 	}
 	return true ; 
 }
-
+void display(int board[MAX][MAX] , int n ){
+  for(int i =0 ;i < n ; i++){
+        for(int j =0 ; j < n ; j++){
+            cout<< board[i][j] << " " ; 
+        }
+        cout<<endl; 
+    }
+    cout<<endl<<endl; 	
+}
 
 bool NQueen(int board[MAX][MAX] , int row ,  int n){
-	if(row>=n)return true ;
+	if(row>=n){
+	   display(board , n );
+	   return false; 
+	}
 
 	for(int i =0 ;i < n ; i++){
 		if(isSafe(board , n , row , i ))
@@ -38,10 +49,4 @@ int main(void){
 	int n  ; cout<<"Enter N : " ; cin>>n ;
 	int board[MAX][MAX] = {0} ; 
 	NQueen(board , 0 , n) ; 
-	for(int i =0 ;i < n ; i++)
-	{
-		for(int j = 0 ; j < n ; j++)
-			cout<< board[i][j] << " " ; 
-		cout<<endl; 
-	}
 }
