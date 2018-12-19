@@ -4,7 +4,7 @@ using namespace std ;
 
 typedef struct{
 	int value , weight ; 
-}Item ; 
+} Item ; 
 
 
 void getItems(Item items[] , int n , int mem[][100] , int cap){

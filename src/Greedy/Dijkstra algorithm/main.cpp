@@ -1,69 +1,70 @@
-  
 #include<bits/stdc++.h>
-int V  ;
+using namespace std ;
 
-using namespace std ; 
-   
-int minDistance(int dist[], bool sptSet[]) 
-{ 
-   int min = INT_MAX, min_index; 
-   
-   for (int v = 0; v < V; v++) 
-     if (sptSet[v] == false && dist[v] <= min) 
-         min = dist[v], min_index = v; 
-   
-   return min_index; 
-} 
-   
-int printSolution(int dist[], int n) 
-{ 
-   printf("Vertex   Distance from Source\n"); 
-   for (int i = 0; i < V; i++) 
-      printf("%d \t\t %d\n", i, dist[i]); 
-} 
-   
-void dijkstra(int graph[100][100], int src) 
-{ 
-     int dist[V] ;
-   
-     bool sptSet[V]; 
-   
-     for (int i = 0; i < V; i++) 
-        dist[i] = INT_MAX, sptSet[i] = false; 
-   
-     dist[src] = 0; 
-   
-     for (int count = 0; count < V-1; count++) 
-     { 
-      int u = minDistance(dist, sptSet); 
-   
-       sptSet[u] = true; 
-   
-       for (int v = 0; v < V; v++) 
-   
-         if (!sptSet[v] && graph[u][v] && dist[u] != INT_MAX  
-                                       && dist[u]+graph[u][v] < dist[v]) 
-            dist[v] = dist[u] + graph[u][v]; 
-     } 
-   
-     printSolution(dist, V); 
-} 
-   
-int main() 
-{ 
-    cout<<"Enter number of vertices : " ; 
-    cin >> V ; 
-    int graph[100][100] ; 
-    cout<<"Enter weight matrix : " <<endl; 
-    for(int i =0 ;i < V ; i++ )
-    {
-        for(int j =0 ; j < V ; j++)
-            cin>>graph[i][j] ; 
+int cost[100][100] , n  ; 
+
+int getMin(int dist[] , bool visited[]){
+    int key = 0 ; 
+    int min = INT_MAX ; 
+    for(int i=0;i < n ; i++){
+        if(!visited[i] && dist[i]<min){
+            min = dist[i] ; 
+            key = i ; 
+        }
     }
+    return key ; 
+}
 
-   
-    dijkstra(graph, 0); 
-   
-    return 0; 
-} 
+void display(int dist[] , int par[] ){
+   for(int i =0 ;i < n ;i++){
+       int temp = par[i] ; 
+       cout<<i << " <- " ;
+       while(temp!=-1)
+       {
+           cout<< temp << " <- " ;
+           temp = par[temp] ; 
+       }
+       cout<<endl; 
+       cout<<"::::Distance = " << dist[i] ; 
+       cout<<endl; 
+   } 
+}
 
+
+void dijkstra(int src ){
+    int par[100] , dist[100] ; 
+    bool visited[100] ={0} ; 
+    fill(dist , dist+n  , INT_MAX ) ; 
+
+    dist[src] =0 ; 
+    par[src] =-1 ;
+    
+    for(int g = 0  ;g<n-1 ; g++){
+        int u = getMin( dist ,  visited )  ; 
+        visited[u] = true ;
+        cout<< " min = " << u <<endl; 
+        for(int v =0 ; v< n ;v++){
+            if(!visited[v] && (dist[u]+cost[u][v]) <  dist[v] && cost[u][v]!=9999)
+            {
+                par[v] = u ; 
+                dist[v] = dist[u] + cost[u][v] ; 
+            }
+        }
+    }
+    
+    display(dist , par) ; 
+}
+
+
+
+int main(void) { 
+    cout<<"Enter n : " ; 
+    cin>>n ; 
+    cout<<"Enter cost matrix : \n" ; 
+    for(int i = 0 ;i < n ; i++){
+        for(int j = 0 ; j< n ; j++)cin>>cost[i][j] ; 
+    }
+    int src ; 
+    cout<<"\nEnter source : " ;  cin>>src ;
+    dijkstra(src) ; 
+}
