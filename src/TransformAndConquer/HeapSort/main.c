@@ -40,29 +40,19 @@ void constructHeap(int a[] , int n )
 
 
 
-void heapify(int a[] , int  n , int keyIndex )
+void heapify(int arr[] , int  n , int key )
 {
-	int v = a[keyIndex] ;
-	bool heap = false ; 
-	int j = 0 , k = keyIndex ;
-
-	while(!heap && k*2<=n )
-	{
-		j  = k*2 ;
-		
-		if(j<n){
-			//two children
-			if(a[j+1]>a[j]) j+=1 ;
-		}
-
-		if(a[j]>v){
-			a[k] = a[j] ;
-			k = j ;
-		}
-		else
-			heap  = true ; 
-	}
-	a[k] = v ;
+	int v = arr[key] ; 
+        while(key*2<n){
+            int j = key*2 ; 
+            if(j+1 < n && arr[j+1]<arr[j])
+                j++ ; 
+            
+            if(v>arr[j]) arr[key] = arr[j] ; 
+            else break ; 
+            key = j ; 
+        }
+       arr[key] = v ; 
 }
 
 
